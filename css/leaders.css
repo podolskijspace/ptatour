@@ -1,0 +1,28 @@
+.leaders-block {
+  display: flex;
+  justify-content: space-between;
+}
+
+.leaders-item {
+  width: 22%;
+}
+
+.leaders-item__title {
+  font-family: 'HelveticaBold';
+  line-height: 25px;
+  margin-bottom: 12px;
+}
+
+.leaders-item__img {
+  height: 64px;
+  margin-bottom: 15px;
+}
+
+.leaders-item__img img {
+  max-width: 100%;
+}
+
+.leaders-item__txt {
+  line-height: 25px;
+  margin: 0;
+}

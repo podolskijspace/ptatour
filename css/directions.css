@@ -1,0 +1,126 @@
+.directions-title {
+  text-align: left;
+  line-height: 65px;
+  margin-bottom: 50px;
+}
+
+.directions-title::after {
+  width: 80px;
+  height: 80px;
+  background-size: unset;
+  left: 0;
+  z-index: -1;
+  transform: translate(-50%, -12%);
+  background-image: url(../img/directions-title.png);
+}
+
+.directions-abs {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 15%;
+}
+
+.directions-bg {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  z-index: 0;
+}
+
+.directions-img {
+  position: absolute;
+  left: 4%;
+  bottom: 0;
+  z-index: 1;
+  width: 28%;
+  min-width: 450px;
+}
+
+.directions-wrap {
+  padding-left: 35%;
+}
+
+.directions-block {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.directions-item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  flex-direction: column;
+  width: 25%;
+  margin-bottom: 38px;
+}
+
+.directions-item.abs {
+  position: absolute;
+  display: block;
+  margin-bottom: 0;
+  width: auto;
+}
+
+.directions-cir_wrap {
+  width: 100px;
+  height: 100px;
+  position: absolute;
+  clip: rect(0px, 100px, 100px, 50px);
+}
+
+.directions-cir_wrap[data-anim~=wrapper] {
+  -webkit-animation-duration: 0.01s;
+  -webkit-animation-delay: 3s;
+  -webkit-animation-name: close-wrapper;
+}
+
+.directions-cir_cir {
+  width: 80px;
+  height: 80px;
+  border: 10px solid green;
+  border-radius: 50px;
+  position: absolute;
+  clip: rect(0px, 50px, 100px, 0px);
+}
+
+.directions-cir_cir[data-anim~=left] {
+  -webkit-animation-duration: 6s;
+  -webkit-animation-name: left-spin;
+}
+
+.directions-cir_cir[data-anim~=right] {
+  -webkit-animation-duration: 3s;
+  -webkit-animation-name: right-spin;
+}
+
+div[data-anim~=base] {
+  -webkit-animation-iteration-count: 1;
+  -webkit-animation-fill-mode: forwards;
+  -webkit-animation-timing-function: linear;
+}
+
+@keyframes right-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(180deg);
+  }
+}
+
+@keyframes left-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes close-wrapper {
+  to {
+    clip: rect(auto, auto, auto, auto);
+  }
+}

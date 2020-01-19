@@ -1,0 +1,42 @@
+
+body
+    font-family: 'HelveticaRegular'
+    font-size: 16px
+    color: #333333
+
+.title
+    font-size: 45px
+    line-height: 75px
+    font-family: 'HelveticaBold'
+    text-align: center
+    position: relative
+    margin: 0
+    margin-bottom: 5px
+    &:after
+        content: ''
+        width: 55px
+        height: 12px
+        background-image: url(../img/blue-strip.png)
+        background-size: cover
+        position: absolute
+        background-repeat: no-repeat
+        top: -6px
+        left: 50%
+        transform: translateX(-50%)
+
+.subtitle
+    text-align: center
+    font-size: 24px
+    margin: 0
+    margin-bottom: 80px
+    
+@import "normalize";
+@import "wrapper";
+@import "container";
+@import "header";;
+@import "footer";
+@import "leaders";
+@import "hot";
+@import "comments";
+@import "directions";
+@import "how";
