@@ -71,3 +71,8 @@
   background: #61C1C9;
   padding: 70px 0 107px 0;
 }
+
+.wrapper--help {
+  background: url("../img/help-bg.png");
+  padding: 102px auto;
+}

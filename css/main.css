@@ -322,6 +322,11 @@ p {
   padding: 70px 0 107px 0;
 }
 
+.wrapper--help {
+  background: url("../img/help-bg.png");
+  padding: 102px auto;
+}
+
 .ycont {
   display: flex;
   flex-direction: column;
@@ -1072,4 +1077,91 @@ div[data-anim~=base] {
   margin: 0px auto;
   padding-left: 20px;
   font-size: 20px;
+}
+
+.help--wrapper {
+  display: flex;
+  justify-content: flex-start;
+}
+
+.help--form {
+  width: 420px;
+  height: 500px;
+  padding: 61px 50px 0 48px;
+  color: #ffffff;
+  background: #61C1C9;
+  box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.15);
+  border-radius: 10px;
+  margin-right: 40px;
+}
+
+.help--form__title {
+  font-size: 35px;
+  line-height: 40px;
+  margin-bottom: 23px;
+  font-family: 'HelveticaBold';
+}
+
+.help--form__text {
+  font-size: 20px;
+  line-height: 40px;
+  margin-bottom: 35px;
+}
+
+.help--form__input {
+  width: 100%;
+  padding-left: 30px;
+  font-size: 25px;
+  line-height: 40px;
+  font-family: 'HelveticaBold';
+  background: transparent url("../img/phone.svg") no-repeat 5px center;
+  border: 0;
+  color: white;
+  border-bottom: 1px solid #ffffff;
+  margin-bottom: 50px;
+}
+
+.help--form__button {
+  width: 265px;
+  height: 64px;
+  background: #ffffff;
+  border-radius: 10px;
+  font-size: 16px;
+  font-family: 'HelveticaBold';
+  color: #333333;
+  border: 0;
+}
+
+.help--list__item {
+  padding-left: 55px;
+  padding-top: 15px;
+  margin-bottom: 100px;
+}
+
+.help--list__count {
+  font-size: 55px;
+  line-height: 40px;
+  font-family: 'HelveticaBold';
+  color: #61C1C9;
+  margin: 0;
+}
+
+.help--list__text {
+  font-size: 24px;
+  line-height: 40px;
+  color: #333333;
+  margin: 0;
+}
+
+.help--list__item:nth-child(1) {
+  background: url("../img/ship-blue.png") no-repeat left top;
+}
+
+.help--list__item:nth-child(2) {
+  background: url("../img/compass-blue.png") no-repeat left top;
+}
+
+.help--list__item:nth-child(3) {
+  background: url("../img/map-blue.png") no-repeat left top;
+  margin: 0;
 }
