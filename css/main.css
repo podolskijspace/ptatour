@@ -301,6 +301,16 @@ p {
   color: #fff;
 }
 
+.wrapper--how {
+  position: relative;
+}
+
+.wrapper--question {
+  background: #fff;
+  padding: 100px 0 127px 0;
+  margin-top: -60px;
+}
+
 .ycont {
   display: flex;
   flex-direction: column;
@@ -481,6 +491,24 @@ p {
   box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
   border: 0;
   border-radius: 10px;
+  margin-right: 25px;
+}
+
+.footer--icons {
+  padding-top: 20px;
+}
+
+.footer--icons i {
+  color: #61C1C9;
+  font-size: 18px;
+}
+
+.footer--icons a {
+  margin-right: 45px;
+}
+
+.footer--icons a:nth-child(3) {
+  margin-right: 0;
 }
 
 .leaders-block {
@@ -745,6 +773,17 @@ div[data-anim~=base] {
   }
 }
 
+.how__line {
+  position: absolute;
+  width: 100%;
+  height: 0px;
+  border-top: 1px dashed #61C1C9;
+  border-bottom: 1px dashed #61C1C9;
+  opacity: 0.2;
+  top: 305px;
+  left: 0;
+}
+
 .how--list {
   display: flex;
   justify-content: space-between;
@@ -790,4 +829,86 @@ div[data-anim~=base] {
   background: #C4C4C4;
   padding: 135px;
   text-align: center;
+}
+
+.question--wrapper {
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+}
+
+.question--left {
+  padding-top: 20px;
+}
+
+.question--left__title {
+  font-family: 'HelveticaBold';
+  font-size: 16px;
+  color: #61C1C9;
+  margin-bottom: 15px;
+}
+
+.question--left__text {
+  font-family: 'HelveticaBold';
+  font-size: 25px;
+  line-height: 45px;
+  margin-bottom: 30px;
+  color: #333333;
+}
+
+.question--form {
+  padding: 70px 60px 80px 60px;
+  background: #FFFFFF;
+  box-shadow: 0px 4px 50px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  width: 440px;
+}
+
+.question--form__title {
+  font-family: 'HelveticaBold';
+  font-size: 16px;
+  color: #333333;
+  margin-bottom: 22px;
+}
+
+.question--form__text {
+  line-height: 25px;
+  font-size: 16px;
+  color: #333333;
+  margin-bottom: 22px;
+}
+
+.question--form__input {
+  padding: 10px 3px 15px 0;
+  margin-bottom: 12px;
+  font-size: 16px;
+  border: 0;
+  width: 100%;
+}
+
+.question--form__input--wrapper {
+  position: relative;
+}
+
+.question--form__input--wrapper::after {
+  position: absolute;
+  top: 40px;
+  left: 0;
+  content: "";
+  width: 320px;
+  height: 3px;
+  background: #61C1C9;
+  box-shadow: 0px 0px 4px rgba(97, 193, 201, 0.5);
+}
+
+.question--form__button {
+  margin-top: 40px;
+  width: 240px;
+  height: 64px;
+  background: #61C1C9;
+  border-radius: 10px;
+  color: #fff;
+  border: 0;
 }

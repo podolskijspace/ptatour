@@ -94,4 +94,22 @@
   box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
   border: 0;
   border-radius: 10px;
+  margin-right: 25px;
+}
+
+.footer--icons {
+  padding-top: 20px;
+}
+
+.footer--icons i {
+  color: #61C1C9;
+  font-size: 18px;
+}
+
+.footer--icons a {
+  margin-right: 45px;
+}
+
+.footer--icons a:nth-child(3) {
+  margin-right: 0;
 }

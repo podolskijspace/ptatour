@@ -1,0 +1,61 @@
+.question
+    &--wrapper
+        display: flex
+        justify-content: space-around
+        align-items: flex-start
+    &--left
+        padding-top: 20px
+        &__title
+            font-family: 'HelveticaBold'
+            font-size: 16px
+            color: #61C1C9
+            margin-bottom: 15px
+        &__text
+            font-family: 'HelveticaBold'
+            font-size: 25px
+            line-height: 45px
+            margin-bottom: 30px
+            color: #333333
+    &--form
+        padding: 70px 60px 80px 60px
+        background: #FFFFFF
+        box-shadow: 0px 4px 50px rgba(0, 0, 0, 0.1)
+        border-radius: 10px
+        display: flex
+        flex-direction: column
+        width: 440px
+        &__title
+            font-family: 'HelveticaBold'
+            font-size: 16px
+            color: #333333
+            margin-bottom: 22px
+        &__text
+            line-height: 25px
+            font-size: 16px
+            color: #333333
+            margin-bottom: 22px
+        &__input
+            padding: 10px 3px 15px 0
+            margin-bottom: 12px
+            font-size: 16px
+            border: 0
+            width: 100%
+        &__input--wrapper
+            position: relative
+            &::after
+                position: absolute
+                top: 40px
+                left: 0
+                content: ""
+                width: 320px
+                height: 3px
+                background: #61C1C9
+                box-shadow: 0px 0px 4px rgba(97, 193, 201, 0.5)
+        &__button
+            margin-top: 40px
+            width: 240px
+            height: 64px
+            background: #61C1C9
+            border-radius: 10px
+            color: #fff
+            border: 0
