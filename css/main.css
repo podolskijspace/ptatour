@@ -311,6 +311,12 @@ p {
   margin-top: -60px;
 }
 
+.wrapper--step {
+  background: #fff;
+  padding: 120px 0 90px 0;
+  margin-top: -60px;
+}
+
 .ycont {
   display: flex;
   flex-direction: column;
@@ -911,4 +917,32 @@ div[data-anim~=base] {
   border-radius: 10px;
   color: #fff;
   border: 0;
+}
+
+.cruise-strip {
+  bottom: 60px;
+  z-index: 10;
+}
+
+.step-title::after {
+  background: 0;
+}
+
+.step-subtitle {
+  margin-bottom: 50px;
+}
+
+.step__list {
+  display: flex;
+  justify-content: space-around;
+}
+
+.step__img--wrapper {
+  height: 40px;
+  margin-bottom: 20px;
+}
+
+.step__title {
+  font-family: 'HelveticaBold';
+  margin-bottom: 7px;
 }
