@@ -26,4 +26,34 @@ $(document).ready(function () {
         slidesToShow: 3,
         arrows: false,
     });
+
+    const directionsListItem = document.querySelectorAll('.directions--list__item'),
+            directionBlock = document.querySelector('.wrapper--directions');
+
+    makeCircles = () => {
+        if (pageYOffset >= (directionBlock.offsetTop - directionBlock.clientHeight + 220)){
+            directionsListItem.forEach(item => setProgress(item.querySelector('.directions--circle__progress'), parseInt(item.querySelector('.directions--circle__text').textContent)))
+            document.removeEventListener('scroll', makeCircles);
+        }
+    }
+
+    setProgress = (item, percent) => {
+        const   radius = item.r.baseVal.value,
+                    circumference = 2 * Math.PI * radius,
+                    offset = circumference - percent / 100 * circumference;
+        
+        
+        plusOffset(circumference, offset, item)
+        
+    }
+
+    plusOffset = (start, percent, elem) => {
+        start -= 1
+        if (start >= percent) {
+            elem.style.strokeDashoffset = start;
+            requestAnimationFrame(() => plusOffset(start, percent, elem));
+        }
+    }
+
+    document.addEventListener('scroll', makeCircles)
 });
