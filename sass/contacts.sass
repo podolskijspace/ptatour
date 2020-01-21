@@ -24,6 +24,8 @@
         display: flex
         flex-direction: column
         width: 440px
+        position: relative
+        z-index: 10
         &__title
             font-family: 'HelveticaBold'
             font-size: 16px
@@ -59,3 +61,11 @@
             border-radius: 10px
             color: #fff
             border: 0
+        &__star
+            position: absolute
+            top: -80px
+            right: -100px
+        &__seashell
+            position: absolute
+            top: 80px
+            right: -50px

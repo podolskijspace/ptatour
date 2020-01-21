@@ -1,0 +1,95 @@
+.articles
+    &__title
+        color: #333333
+        font-size: 45px
+        margin: 0px 0 25px 0
+        line-height: 45px
+        font-family: 'Roboto', sans-serif
+    &--filter
+        display: flex
+        align-items: center
+        justify-content: start
+        margin-bottom: 30px
+        &__all
+            background: #61C1C9
+            border-radius: 10px
+            border: 0
+            width: 105px
+            height: 45px
+            font-size: 16px
+            font-family: 'HelveticaBold'
+            margin-right: 30px
+            color: #ffffff
+        &__filter
+            font-size: 16px
+            color: #333333
+            opacity: 0.5
+            margin-right: 45px
+    &--list
+        display: flex
+        flex-wrap: wrap
+        justify-content: space-between
+        margin-bottom: 25px
+        &__item
+            width: 23%
+            height: 368px
+            padding-top: 200px
+            background: url('../img/articles-item1.png')
+            border-radius: 10px
+            padding-left: 26px
+            margin-bottom: 15px
+        &__date
+            font-size: 14px
+            color: #ffffff
+            opacity: 0.2
+            margin-bottom: 15px
+            &_number
+                font-family: 'HelveticaBold'
+        &__text
+            color: #ffffff
+            font-size: 16px
+            line-height: 20px
+            font-family: 'HelveticaBold'
+            margin-bottom: 21px
+        &__button
+            line-height: 25px
+            background: #ffffff
+            border-radius: 100px
+            color: #333333
+            font-size: 14px
+            font-family: 'HelveticaBold'
+            display: block
+            padding: 10px 50px
+            width: min-content
+    &--under
+        display: flex
+        justify-content: space-between
+        align-items: center
+    &--pages
+        display: flex
+        &__number
+            font-family: 'HelveticaBold'
+            padding: 10px
+            margin: 0px 5px
+            font-size: 16px
+            color: #333333
+            &_active
+                background: #61C1C9
+                color: #ffffff
+                border-radius: 5px
+            &_margin
+                margin: 0px 10px
+        &__number:nth-child(1)
+            margin-left: 0
+    &--right
+        font-size: 16px
+        font-family: 'HelveticaBold'
+        &__back
+            color: #000000
+            opacity: 0.2
+            margin-right: 60px
+        &__next
+            padding: 19px 70px
+            background: #61C1C9
+            border-radius: 10px
+            color: #ffffff
