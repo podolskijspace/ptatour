@@ -201,10 +201,14 @@
   border: 0;
 }
 
+.help--list {
+  margin: 0;
+}
+
 .help--list__item {
   padding-left: 55px;
   padding-top: 15px;
-  margin-bottom: 100px;
+  margin-bottom: 110px;
 }
 
 .help--list__count {
