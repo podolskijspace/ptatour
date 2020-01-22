@@ -18,6 +18,12 @@
   transform: translateY(-35%);
 }
 
+@media (max-width: 710px) {
+  .comments-abs {
+    display: none;
+  }
+}
+
 .comments-slider {
   width: 80%;
   flex-shrink: 0;

@@ -1,21 +1,39 @@
+@import "media";
 .footer
-    font-family: 'Roboto', sans-serif
     &--top
         display: flex
         justify-content: space-between
         margin-bottom: 40px
+        @media (max-width: $media-pc)
+            flex-direction: column
+            justify-content: space-around
+            text-align: center
+            margin-bottom: 0
         &__img
             width: 58px
             height: 58px
+            @media (max-width: $media-pc)
+                margin: 0px auto
     &--nav
         padding-top: 20px
+        @media (max-width: $media-pc)
+            margin-bottom: 10px
+        @media (max-width: $media-phone)
+            display: flex
+            flex-direction: column
+            justify-content: space-around
         &__item
             margin-right: 25px
+            @media (max-width: $media-phone)
+                margin-bottom: 7px
+                margin-right: 0
     &--right
         display: flex
         flex-direction: column
         padding-top: 8px
         line-height: 1.5em
+        @media (max-width: $media-pc)
+            margin-bottom: 30px
         &__number
             &_big
                 font-size: 1.5em
@@ -29,23 +47,38 @@
         justify-content: space-between
         height: 180px
         align-items: center
+        @media (max-width: $media-pc)
+            flex-direction: column
+            justify-content: space-around
+            text-align: center
+            height: auto
         &--left
             width: 165px
             &__title
                 font-weight: bold
                 margin-bottom: 30px
+                @media (max-width: $media-pc)
+                    margin-bottom: 5px
         &--right
             display: flex
             flex-direction: column
             &__title
                 margin-bottom: 10px
                 font-weight: bold
+                @media (max-width: $media-pc)
+                    margin-bottom: 3px
             &__text
                 margin-bottom: 5px;
                 text-decoration: underline
     &--middle
         display: flex
         justify-content: space-between
+        @media (max-width: $media-pc)
+            justify-content: space-around
+            margin-bottom: 10px
+        @media (max-width: $media-phone)
+            flex-direction: column
+            justify-content: space-around
     &--form
         &__input
             width: 295px
@@ -56,6 +89,9 @@
             border: 0
             margin-right: 15px
             box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25)
+            @media (max-width: $media-phone)
+                margin-bottom: 7px
+                margin-right: 0
         &__button
             width: 190px
             height: 50px
@@ -65,8 +101,16 @@
             border: 0
             border-radius: 10px
             margin-right: 25px
+            @media (max-width: $media-phone)
+                margin-bottom: 7px
+    @media (max-width: $media-phone)
+        display: flex
+        justify-content: space-around
+        flex-wrap: wrap
     &--icons
         padding-top: 20px
+        @media (max-width: $media-phone)
+            margin-bottom: 7px
         & i
             color: #61C1C9
             font-size: 18px
