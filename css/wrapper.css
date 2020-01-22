@@ -54,6 +54,12 @@
   background: #fff;
 }
 
+@media (max-width: 1170px) {
+  .wrapper--leaders_margin-top {
+    padding-top: 40px;
+  }
+}
+
 .wrapper--directions {
   padding-bottom: 0;
   padding-left: 550px;
@@ -80,6 +86,12 @@
 
 .wrapper--how {
   position: relative;
+}
+
+@media (max-width: 1170px) {
+  .wrapper--how {
+    padding-top: 20px;
+  }
 }
 
 .wrapper--question {
