@@ -14,6 +14,14 @@
   background-image: url(../img/directions-title.png);
 }
 
+@media (max-width: 1170px) {
+  .directions-title {
+    text-align: center;
+    line-height: 45px;
+    font-size: 38px;
+  }
+}
+
 .directions-abs {
   position: absolute;
   bottom: 0;
@@ -28,6 +36,12 @@
   z-index: 0;
 }
 
+@media (max-width: 1170px) {
+  .directions-bg {
+    display: none;
+  }
+}
+
 .directions-img {
   position: absolute;
   left: 4%;
@@ -37,15 +51,34 @@
   min-width: 450px;
 }
 
+@media (max-width: 1170px) {
+  .directions-img {
+    display: none;
+  }
+}
+
 .directions--list {
   display: flex;
   flex-wrap: wrap;
+}
+
+@media (max-width: 1170px) {
+  .directions--list {
+    justify-content: space-around;
+  }
 }
 
 .directions--list__item {
   width: 21%;
   margin-bottom: 60px;
   position: relative;
+}
+
+@media (max-width: 1170px) {
+  .directions--list__item {
+    width: 120px;
+    margin-bottom: 20px;
+  }
 }
 
 .directions--list__text {

@@ -1,3 +1,4 @@
+@import "media";
 .directions
     &-title
         text-align: left
@@ -11,6 +12,10 @@
             z-index: -1
             transform: translate(-50%, -12%)
             background-image: url(../img/directions-title.png)
+        @media (max-width: $media-pc)
+            text-align: center
+            line-height: 45px
+            font-size: 38px
     &-abs
         position: absolute
         bottom: 0
@@ -21,6 +26,8 @@
         left: 0
         bottom: 0
         z-index: 0
+        @media (max-width: $media-pc)
+            display: none
     &-img
         position: absolute
         left: 4%
@@ -28,13 +35,20 @@
         z-index: 1
         width: 28%
         min-width: 450px
+        @media (max-width: $media-pc)
+            display: none
     &--list
         display: flex
         flex-wrap: wrap
+        @media (max-width: $media-pc)
+            justify-content: space-around
         &__item
             width: 21%
             margin-bottom: 60px
             position: relative
+            @media (max-width: $media-pc)
+                width: 120px
+                margin-bottom: 20px
         &__text
             font-size: 20px
             color: #333333

@@ -1,10 +1,25 @@
 .leaders-block {
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
 }
 
 .leaders-item {
   width: 22%;
+}
+
+@media (max-width: 1170px) {
+  .leaders-item {
+    width: 45%;
+    margin-bottom: 15px;
+    text-align: center;
+  }
+}
+
+@media (max-width: 710px) {
+  .leaders-item {
+    width: 95%;
+  }
 }
 
 .leaders-item__title {

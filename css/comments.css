@@ -28,6 +28,18 @@
   justify-content: space-between;
 }
 
+@media (max-width: 710px) {
+  .comments-block {
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 710px) {
+  .comments-desc {
+    text-align: center;
+  }
+}
+
 .comments-desc__current {
   color: #61C1C9;
   font-family: 'HelveticaBold';
@@ -48,6 +60,14 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
+}
+
+@media (max-width: 710px) {
+  .comments-desc__row {
+    justify-content: flex-start;
+    width: max-content;
+    margin: 0px auto;
+  }
 }
 
 .comments-desc__arrows {

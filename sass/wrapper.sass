@@ -1,3 +1,4 @@
+@import "media";
 .wrapper
 	width: 100%
 	display: flex
@@ -5,6 +6,8 @@
 	position: relative
 	padding-bottom: 60px
 	padding-top: 60px
+	@media (max-width: $media-phone)
+		padding-top: 40px
 	&--header
 		position: absolute
 		top: 0
@@ -17,13 +20,16 @@
 	&--main
 		padding-bottom: 210px
 		padding-top: 230px
-		height: 606px
 		background-size: cover
 		background-position: center
 		color: #fff
 		font-family: 'Roboto'
+		@media (max-width: $media-phone)
+			padding: 120px 0 100px
 	&--leaders
 		padding-top: 120px
+		@media (max-width: $media-phone)
+			padding-top: 80px
 		&_margin-top
 			margin-top: -80px
 			background: #fff
@@ -33,6 +39,8 @@
 		padding-bottom: 0
 		padding-left: 550px
 		padding-top: 0
+		@media (max-width: $media-pc)
+            padding: 0
 	&--footer
 		background: #215B60
 		padding: 50px 0 30px 0

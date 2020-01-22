@@ -7,6 +7,12 @@
   padding-top: 60px;
 }
 
+@media (max-width: 710px) {
+  .wrapper {
+    padding-top: 40px;
+  }
+}
+
 .wrapper--header {
   position: absolute;
   top: 0;
@@ -21,15 +27,26 @@
 .wrapper--main {
   padding-bottom: 210px;
   padding-top: 230px;
-  height: 606px;
   background-size: cover;
   background-position: center;
   color: #fff;
   font-family: 'Roboto';
 }
 
+@media (max-width: 710px) {
+  .wrapper--main {
+    padding: 120px 0 100px;
+  }
+}
+
 .wrapper--leaders {
   padding-top: 120px;
+}
+
+@media (max-width: 710px) {
+  .wrapper--leaders {
+    padding-top: 80px;
+  }
 }
 
 .wrapper--leaders_margin-top {
@@ -41,6 +58,12 @@
   padding-bottom: 0;
   padding-left: 550px;
   padding-top: 0;
+}
+
+@media (max-width: 1170px) {
+  .wrapper--directions {
+    padding: 0;
+  }
 }
 
 .wrapper--footer {

@@ -1,3 +1,4 @@
+@import "media";
 .comments
     &-title
         margin-bottom: 40px
@@ -19,7 +20,11 @@
     &-block
         display: flex
         justify-content: space-between
+        @media (max-width: $media-phone)
+            flex-direction: column
     &-desc
+        @media (max-width: $media-phone)
+            text-align: center
         &__current
             color: #61C1C9
             font-family: 'HelveticaBold'
@@ -34,6 +39,10 @@
             display: flex
             align-items: center
             justify-content: space-between
+            @media (max-width: $media-phone)
+                justify-content: flex-start
+                width: max-content
+                margin: 0px auto
         &__arrows
             display: flex
             font-size: 11px

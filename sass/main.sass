@@ -1,4 +1,4 @@
-
+@import "media";
 body
     font-family: 'HelveticaRegular'
     font-size: 16px
@@ -23,12 +23,20 @@ body
         top: -6px
         left: 50%
         transform: translateX(-50%)
+    @media (max-width: $media-phone)
+        font-size: 30px
+        line-height: 40px
 
 .subtitle
     text-align: center
     font-size: 24px
     margin: 0
     margin-bottom: 80px
+    @media (max-width: $media-phone)
+        font-size: 16px
+        line-height: 20px
+        margin-bottom: 30px
+        
     
 @import "normalize";
 @import "wrapper";

@@ -1,9 +1,17 @@
+@import "media";
 .leaders
     &-block
         display: flex
         justify-content: space-between
+        flex-wrap: wrap
     &-item
         width: 22%
+        @media (max-width: $media-pc)
+            width: 45%
+            margin-bottom: 15px
+            text-align: center
+        @media (max-width: $media-phone)
+            width: 95%
         &__title
             font-family: 'HelveticaBold'
             line-height: 25px

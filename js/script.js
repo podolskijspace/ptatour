@@ -27,6 +27,7 @@ $(document).ready(function () {
         arrows: false,
     });
 
+    // Круги внизу главной страницы
     const directionsListItem = document.querySelectorAll('.directions--list__item'),
             directionBlock = document.querySelector('.wrapper--directions');
 
@@ -56,4 +57,21 @@ $(document).ready(function () {
     }
 
     document.addEventListener('scroll', makeCircles)
+
+    //Появление и исчезновение меню
+    const menuOpenBtn = document.querySelector('.header-menuIcon'),
+                menuCloseBtn = document.querySelector('.header-menu__close'),
+                menu = document.querySelector('.header-menu');
+
+    const openMenu = () => {
+        menu.style.transform = 'translateX(0)';
+    }
+
+    const closeMenu = () => {
+        menu.style.transform = 'translateX(100%)';
+    }
+
+    menuOpenBtn.addEventListener('click', openMenu)
+
+    menuCloseBtn.addEventListener('click', closeMenu)
 });
