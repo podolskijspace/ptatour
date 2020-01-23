@@ -480,7 +480,9 @@ p {
   height: 19px;
   cursor: pointer;
   display: none;
-  margin-top: 18px;
+  margin-top: 16px;
+  font-size: 24px;
+  margin-right: 10px;
 }
 
 @media (max-width: 1170px) {
@@ -765,7 +767,7 @@ p {
 
 @media (max-width: 710px) {
   .footer--form__input {
-    margin-bottom: 7px;
+    margin-bottom: 13px;
     margin-right: 0;
   }
 }
@@ -784,6 +786,7 @@ p {
 @media (max-width: 710px) {
   .footer--form__button {
     margin-bottom: 7px;
+    margin-right: 0;
   }
 }
 
@@ -1807,13 +1810,14 @@ p {
   align-items: center;
   justify-content: start;
   margin-bottom: 30px;
+  overflow-x: scroll;
 }
 
 .articles--filter__all {
   background: #61C1C9;
   border-radius: 10px;
   border: 0;
-  width: 105px;
+  min-width: 105px;
   height: 45px;
   font-size: 16px;
   font-family: 'HelveticaBold';
@@ -1828,11 +1832,23 @@ p {
   margin-right: 45px;
 }
 
+@media (max-width: 1170px) {
+  .articles--filter__filter {
+    margin-right: 20px;
+  }
+}
+
 .articles--list {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content: space-around;
   margin-bottom: 25px;
+}
+
+@media (max-width: 710px) {
+  .articles--list {
+    margin-bottom: 0;
+  }
 }
 
 .articles--list__item {
@@ -1843,6 +1859,7 @@ p {
   border-radius: 10px;
   padding-left: 26px;
   margin-bottom: 15px;
+  min-width: 250px;
 }
 
 .articles--list__date {
@@ -1882,6 +1899,14 @@ p {
   align-items: center;
 }
 
+@media (max-width: 710px) {
+  .articles--under {
+    flex-direction: column;
+    justify-content: space-around;
+    height: 150px;
+  }
+}
+
 .articles--pages {
   display: flex;
 }
@@ -1892,6 +1917,12 @@ p {
   margin: 0px 5px;
   font-size: 16px;
   color: #333333;
+}
+
+@media (max-width: 710px) {
+  .articles--pages__number {
+    margin-bottom: 20px;
+  }
 }
 
 .articles--pages__number_active {
@@ -1917,6 +1948,12 @@ p {
   color: #000000;
   opacity: 0.2;
   margin-right: 60px;
+}
+
+@media (max-width: 710px) {
+  .articles--right__back {
+    margin-right: 30px;
+  }
 }
 
 .articles--right__next {
