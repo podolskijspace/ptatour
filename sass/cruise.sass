@@ -1,3 +1,4 @@
+@import "media";
 .cruise
     &-strip
         bottom: 60px
@@ -8,12 +9,25 @@
         background: 0
     &-subtitle
         margin-bottom: 50px
+        @media (max-width: $media-phone)
+            margin-bottom: 15px
+            margin-top: 7px
     &__list
         display: flex
         justify-content: space-around
+        @media (max-width: $media-pc)
+            flex-wrap: wrap
+            text-align: center
+    &__item
+        @media (max-width: $media-phone)
+            width: 150px
+            margin-bottom: 12px
     &__img--wrapper
         height: 40px
         margin-bottom: 20px
+        @media (max-width: $media-pc)
+            width: max-content
+            margin: 0px auto 10px
     &__title
         font-family: 'HelveticaBold'
         margin-bottom: 7px
@@ -24,17 +38,27 @@
         color: #ffffff
         margin-bottom: 20px
         text-align: center
+        @media (max-width: $media-phone)
+            font-size: 30px
+            margin-bottom: 10px
     &__subtitle
         font-size: 24px
         text-align: center
         color: #ffffff
         margin-bottom: 35px
+        @media (max-width: $media-phone)
+            font-size: 18px
+            margin-bottom: 15px
     &--list
         display: flex
         justify-content: space-between
         flex-wrap: wrap
         margin-top: 30px
         margin-bottom: 60px
+        @media (max-width: $media-pc)
+            margin-bottom: 20px
+            margin-bottom: 15px
+            justify-content: space-around
     &--card
         width: 30%
         border-radius: 10px
@@ -43,6 +67,9 @@
         margin-bottom: 18px
         padding-bottom: 25px
         align-items: flex-start
+        min-width: 300px
+        @media (max-width: $media-phone)
+            min-width: 280px
         &__img
             width: 100%
             border-top-left-radius: 10px
@@ -55,11 +82,16 @@
             line-height: 25px
             color: #333333
             margin-bottom: 15px
+            @media (max-width: $media-phone)
+                margin-left: 10px
         &__wrapper
             display: flex
             justify-content: space-between
             padding-left: 26px
             padding-right: 24px
+            @media (max-width: $media-phone)
+                padding-left: 10px
+                padding-right: 10px
         &__text--left
             font-size: 14px
             font-family: 'HelveticaBold'
@@ -99,20 +131,29 @@
             font-family: 'HelveticaBold'
             border: 0
     &__input
-        width: 820px
+        max-width: 820px
         height: 70.4px
         border: 0
         border-radius: 10px
         margin: 0px auto 
         padding-left: 20px
         font-size: 20px
+        width: 95%
+        padding-right: 8px
+        @media (max-width: $media-phone)
+            height: 45px
+            font-size: 16px
+            padding-left: 10px
 
 .help
     &--wrapper
         display: flex
         justify-content: flex-start
+        @media (max-width: $media-phone)
+            flex-direction: column
+            justify-content: space-around
     &--form
-        width: 420px
+        max-width: 420px
         height: 500px
         padding: 61px 50px 0 48px
         color: #ffffff
@@ -120,15 +161,30 @@
         box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.15)
         border-radius: 10px
         margin-right: 40px
+        @media (max-width: $media-phone)
+            padding: 30px 10px
+            width: 100%
+            height: auto
+            text-align: center
+            margin: 0px auto 15px
         &__title
             font-size: 35px
             line-height: 40px
             margin-bottom: 23px
             font-family: 'HelveticaBold'
+            @media (max-width: $media-phone)
+                font-size: 25px
+                line-height: 30px
+                margin-bottom: 10px
+
         &__text
             font-size: 20px
             line-height: 40px
             margin-bottom: 35px
+            @media (max-width: $media-phone)
+                font-size: 16px
+                line-height: 20px
+                margin-bottom: 17px
         &__input
             width: 100%
             padding-left: 30px
@@ -140,6 +196,13 @@
             color: white
             border-bottom: 1px solid #ffffff
             margin-bottom: 50px
+            padding-right: 8px
+            @media (max-width: $media-phone)
+                padding-left: 35px
+                font-size: 16px
+                line-height: 24px
+                width: 200px
+                margin: 0px auto 18px
         &__button
             width: 265px
             height: 64px
@@ -149,23 +212,34 @@
             font-family: 'HelveticaBold'
             color: #333333
             border: 0
+            @media (max-width: $media-phone)
+                margin: 0px auto
     &--list
         margin: 0
         &__item
             padding-left: 55px
             padding-top: 15px
             margin-bottom: 110px
+            @media (max-width: $media-phone)
+                margin: 10px auto
+                width: 210px
+                transform: translateX(40px)
         &__count
             font-size: 55px
             line-height: 40px
             font-family: 'HelveticaBold'
             color: #61C1C9
             margin: 0
+            @media (max-width: $media-phone)
+                font-size: 40px
         &__text
             font-size: 24px
             line-height: 40px
             color: #333333
             margin: 0
+            @media (max-width: $media-phone)
+                font-size: 16px
+                line-height: 30px
         &__item:nth-child(1)
             background: url("../img/ship-blue.png") no-repeat left top
         &__item:nth-child(2)
@@ -173,5 +247,7 @@
         &__item:nth-child(3)
             background: url("../img/map-blue.png") no-repeat left top
             margin: 0
+            @media (max-width: $media-phone)
+                margin: 10px auto
 
 

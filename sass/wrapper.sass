@@ -6,6 +6,8 @@
 	position: relative
 	padding-bottom: 60px
 	padding-top: 60px
+	max-width: 1440px
+	margin: 0px auto
 	@media (max-width: $media-phone)
 		padding-top: 40px
 	&--header
@@ -63,11 +65,18 @@
 		background: #fff
 		padding: 120px 0 90px 0
 		margin-top: -60px
+		@media (max-width: $media-pc)
+			padding: 40px 0 30px 0
 	&--popular
 		background: #61C1C9
 		padding: 70px 0 107px 0
+		@media (max-width: $media-pc)
+			padding: 40px 0 30px 0
 	&--help
 		background: url('../img/help-bg.png')
-		padding: 102px auto
+		padding: 102px 0
+		@media (max-width: $media-pc)
+			padding: 30px 0
+			background: transparent
 	&--articles
 		padding: 165px 0 60px 0
