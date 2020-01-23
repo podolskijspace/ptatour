@@ -102,6 +102,12 @@
   margin-top: -60px;
 }
 
+@media (max-width: 710px) {
+  .wrapper--question {
+    padding: 20px 0 30px;
+  }
+}
+
 .wrapper--step {
   background: #fff;
   padding: 120px 0 90px 0;

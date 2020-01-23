@@ -4,8 +4,21 @@
   align-items: flex-start;
 }
 
+@media (max-width: 710px) {
+  .question--wrapper {
+    flex-direction: column;
+  }
+}
+
 .question--left {
   padding-top: 20px;
+}
+
+@media (max-width: 710px) {
+  .question--left {
+    text-align: center;
+    margin: 0px auto;
+  }
 }
 
 .question--left__title {
@@ -15,12 +28,26 @@
   margin-bottom: 15px;
 }
 
+@media (max-width: 710px) {
+  .question--left__title {
+    margin-bottom: 10px;
+  }
+}
+
 .question--left__text {
   font-family: 'HelveticaBold';
   font-size: 25px;
   line-height: 45px;
   margin-bottom: 30px;
   color: #333333;
+}
+
+@media (max-width: 710px) {
+  .question--left__text {
+    font-size: 20px;
+    line-height: 24px;
+    margin-bottom: 15px;
+  }
 }
 
 .question--form {
@@ -35,6 +62,16 @@
   z-index: 10;
 }
 
+@media (max-width: 710px) {
+  .question--form {
+    margin: 25px auto 0;
+    padding: 30px 10px;
+    max-width: 440px;
+    width: 100%;
+    text-align: center;
+  }
+}
+
 .question--form__title {
   font-family: 'HelveticaBold';
   font-size: 16px;
@@ -47,6 +84,12 @@
   font-size: 16px;
   color: #333333;
   margin-bottom: 22px;
+}
+
+@media (max-width: 710px) {
+  .question--form__text {
+    line-height: 20px;
+  }
 }
 
 .question--form__input {
@@ -72,6 +115,19 @@
   box-shadow: 0px 0px 4px rgba(97, 193, 201, 0.5);
 }
 
+@media (max-width: 710px) {
+  .question--form__input--wrapper::after {
+    width: 250px;
+  }
+}
+
+@media (max-width: 710px) {
+  .question--form__input--wrapper {
+    width: 250px;
+    margin: 0px auto;
+  }
+}
+
 .question--form__button {
   margin-top: 40px;
   width: 240px;
@@ -82,14 +138,32 @@
   border: 0;
 }
 
+@media (max-width: 710px) {
+  .question--form__button {
+    margin: 30px auto 0;
+  }
+}
+
 .question--form__star {
   position: absolute;
   top: -80px;
   right: -100px;
 }
 
+@media (max-width: 710px) {
+  .question--form__star {
+    display: none;
+  }
+}
+
 .question--form__seashell {
   position: absolute;
   top: 80px;
   right: -50px;
+}
+
+@media (max-width: 710px) {
+  .question--form__seashell {
+    display: none;
+  }
 }

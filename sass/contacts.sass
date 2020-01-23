@@ -1,21 +1,33 @@
+@import "media";
 .question
     &--wrapper
         display: flex
         justify-content: space-around
         align-items: flex-start
+        @media (max-width: $media-phone)
+            flex-direction: column
     &--left
         padding-top: 20px
+        @media (max-width: $media-phone)
+            text-align: center
+            margin: 0px auto
         &__title
             font-family: 'HelveticaBold'
             font-size: 16px
             color: #61C1C9
             margin-bottom: 15px
+            @media (max-width: $media-phone)
+                margin-bottom: 10px
         &__text
             font-family: 'HelveticaBold'
             font-size: 25px
             line-height: 45px
             margin-bottom: 30px
             color: #333333
+            @media (max-width: $media-phone)
+                font-size: 20px
+                line-height: 24px
+                margin-bottom: 15px
     &--form
         padding: 70px 60px 80px 60px
         background: #FFFFFF
@@ -26,6 +38,12 @@
         width: 440px
         position: relative
         z-index: 10
+        @media (max-width: $media-phone)
+            margin: 25px auto 0
+            padding: 30px 10px
+            max-width: 440px
+            width: 100%
+            text-align: center
         &__title
             font-family: 'HelveticaBold'
             font-size: 16px
@@ -36,6 +54,8 @@
             font-size: 16px
             color: #333333
             margin-bottom: 22px
+            @media (max-width: $media-phone)
+                line-height: 20px
         &__input
             padding: 10px 3px 15px 0
             margin-bottom: 12px
@@ -53,6 +73,11 @@
                 height: 3px
                 background: #61C1C9
                 box-shadow: 0px 0px 4px rgba(97, 193, 201, 0.5)
+                @media (max-width: $media-phone)
+                    width: 250px
+            @media (max-width: $media-phone)
+                width: 250px
+                margin: 0px auto
         &__button
             margin-top: 40px
             width: 240px
@@ -61,11 +86,17 @@
             border-radius: 10px
             color: #fff
             border: 0
+            @media (max-width: $media-phone)
+                margin: 30px auto 0
         &__star
             position: absolute
             top: -80px
             right: -100px
+            @media (max-width: $media-phone)
+                display: none
         &__seashell
             position: absolute
             top: 80px
             right: -50px
+            @media (max-width: $media-phone)
+                display: none
