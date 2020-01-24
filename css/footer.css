@@ -184,6 +184,10 @@
   }
 }
 
+.footer--form__button:active {
+  background: #50a9b1;
+}
+
 @media (max-width: 710px) {
   .footer {
     display: flex;

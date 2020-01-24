@@ -26,6 +26,10 @@
   color: #ffffff;
 }
 
+.articles--filter__all:active {
+  background: #50a9b1;
+}
+
 .articles--filter__filter {
   font-size: 16px;
   color: #333333;
@@ -94,6 +98,10 @@
   width: min-content;
 }
 
+.articles--list__button:active {
+  background: #e6d9d9;
+}
+
 .articles--under {
   display: flex;
   justify-content: space-between;
@@ -118,6 +126,10 @@
   margin: 0px 5px;
   font-size: 16px;
   color: #333333;
+}
+
+.articles--pages__number:hover {
+  cursor: pointer;
 }
 
 @media (max-width: 710px) {
@@ -162,4 +174,8 @@
   background: #61C1C9;
   border-radius: 10px;
   color: #ffffff;
+}
+
+.articles--right__next:active {
+  background: #50a9b1;
 }

@@ -74,4 +74,38 @@ $(document).ready(function () {
     menuOpenBtn.addEventListener('click', openMenu)
 
     menuCloseBtn.addEventListener('click', closeMenu)
+
+    //слайдер на страницу обо мне
+    // const sliderAbout = () => {
+    //     const slider = document.querySelector('.command--slides'),
+    //                 arrowLeft = slider.querySelector('.command--slides__arrow_left'),
+    //                 arrowRight = slider.querySelector('.command--slides__arrow_left'),
+    //                 sliderWrapper = slider.querySelector('.command--slides__wrapper');
+                
+    //     const moveLeft = (transform) => {
+    //         transform += 300;
+    //         sliderWrapper.style.transform = `translateX(${transform}px`;
+    //     }
+
+    //     moveLeft(sliderWrapper.style.transform || 0)
+
+    // }
+
+    // sliderAbout();
+
+    $('.command--slides__wrapper').slick({
+        asNavFor: '.command--left',
+        arrows: true,
+        prevArrow: '.command--slides__arrow_left',
+        nextArrow: '.command--slides__arrow_right',
+        speed:1000,
+    });
+
+    $('.command--left').slick({
+        arrows: false,
+        fade: true,
+        speed: 500,
+    });
+
+
 });

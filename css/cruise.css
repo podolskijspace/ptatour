@@ -208,6 +208,10 @@
   border: 0;
 }
 
+.popular--card__button:active {
+  background: #422dc7;
+}
+
 .popular__input {
   max-width: 820px;
   height: 70.4px;

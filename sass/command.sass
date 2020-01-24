@@ -1,0 +1,101 @@
+@import "media";
+.command
+    &--slider
+        display: flex
+        @media (max-width: $media-pc)
+            flex-direction: column
+            justify-content: space-around
+    &--left
+        width: 400px
+        font-size: 20px
+        line-height: 28px
+        margin-top: 200px
+        @media (max-width: $media-pc)
+            margin: 15px auto
+            text-align: center
+        &__item
+            transition: 0.3s ease all
+        &__name
+            font-family: 'HelveticaBold'
+            margin-bottom: 20px
+            @media (max-width: $media-pc)
+                margin-bottom: 12px
+        &__text
+            &_margin
+                margin-bottom: 50px
+                @media (max-width: $media-pc)
+                    margin-bottom: 25px
+    &--right
+        position: relative
+    &--slides
+        height: 500px
+        align-items: center
+        position: absolute
+        width: 1500px
+        left: 40px
+        overflow: hidden
+        padding-left: 140px
+        @media (max-width: $media-pc)
+            position: static
+            height: 300px
+            margin: 0px auto
+            width: 300px
+            padding-left: 0
+        &__arrow
+            width: 27px
+            height: 27px
+            border: 1px solid #61C1C9
+            color: #61C1C9
+            border-radius: 50%
+            position: absolute
+            top: 50%
+            transform: translateY(50%)
+            display: flex
+            align-items: center
+            justify-content: center
+            z-index: 100000
+            &:hover
+                background: #61C1C9
+                color: #ffffff
+                cursor: pointer
+            @media (max-width: $media-pc)
+                left: 50%
+            &_left
+                left: 30px
+                @media (max-width: $media-pc)
+                    transform: translateX(-175px)
+            &_right
+                left: 560px
+                @media (max-width: $media-pc)
+                    transform: translateX(175px)
+        &__wrapper
+            display: flex
+            height: 100%
+            align-items: center
+        &__slide
+            &_active
+                transform: scale(1.4)
+            &-wrapper
+                display: flex
+                align-items: center
+                justify-content: space-around
+                width: 322px
+                height: 322px
+                border-radius: 50%
+                border: 1px solid #61C1C9
+                @media (max-width: $media-pc)
+                    width: 250px
+                    height: 250px
+                    margin: 0px auto
+        &__img
+            width: 282px
+            height: 282px
+            border-radius: 50%
+            background: #C4C4C4
+            @media (max-width: $media-pc)
+                width: 220px
+                height: 220px
+
+.slick-active
+    // transform: scale(1.4)
+
